@@ -7,8 +7,11 @@
 		"science": 3,
 		"gold": 3,
 		"culture": 1,
+		"cityStrength": 2,
 		"cost": 1,
 		"uniques": ["Indicates the capital city"]
+		// "cityStrength" should be 2.5
+		// 1 great art work slot in BNW
 	},
 	{
 		"name": "Monument",
@@ -18,15 +21,16 @@
 		"maintenance": 1
 	},
 	{
-		"name": "Granary", 
+		"name": "Granary",
 		"food": 2,
 		"resourceBonusStats": {"food": 1},
 		"maintenance": 1,
 		"hurryCostModifier": 25,
 		"requiredTech": "Pottery"
+		// allows food to be moved from this city along trade routes inside your civilization in BNW
 	},
 	{
-		"name": "Stone Works", 
+		"name": "Stone Works",
 		"happiness": 1,
 		"production": 1,
 		"requiredNearbyImprovedResources": ["Marble", "Stone"],
@@ -43,6 +47,7 @@
 		"greatPersonPoints": {"production": 1},
 		"requiredTech": "Calendar",
 		"quote": "'Time crumbles things; everything grows old and is forgotten under the power of time' - Aristotle"
+		// 5 faith, no culture in expansions
 	},
 	{
 		"name": "Library",
@@ -61,6 +66,7 @@
 		"requiredTech": "Writing",
 		"uniques": ["Free Technology"],
 		"quote": "'Libraries are as the shrine where all the relics of the ancient saints, full of true virtue, and all that without delusion or imposture are preserved and reposed.' - Sir Francis Bacon"
+		// 2 great writing slots in BNW
 	},
 	{
 		"name": "Paper Maker",
@@ -72,7 +78,7 @@
 		"requiredTech": "Writing"
 	},
 	{
-		"name": "Circus", 
+		"name": "Circus",
 		"requiredNearbyImprovedResources": ["Ivory","Horses"],
 		"happiness": 2,
 		"hurryCostModifier": 25,
@@ -98,7 +104,7 @@
 		"hurryCostModifier": 25,
 		"maintenance": 1,
 		"percentStatBonus": {"food": 15},
-		"requiredTech": "The Wheel"     
+		"requiredTech": "The Wheel"
 	},
 	{
 		"name": "Temple of Artemis",
@@ -112,10 +118,10 @@
 	},
 	{
 		"name": "Walls",
-		"cityStrength": 5,
-		"cityHealth": 50,
+		"cityStrength": 4,
 		"hurryCostModifier": 25,
 		"requiredTech": "Masonry"
+		// cityStrength 5, cityHealth 50 in expansions
 	},
 	{
 		"name": "Walls of Babylon",
@@ -123,9 +129,9 @@
 		"cost": 65,
 		"uniqueTo": "Babylon",
 		"cityStrength": 6,
-		"cityHealth": 100,
 		"hurryCostModifier": 25,
 		"requiredTech": "Masonry"
+		// cityHealth 100 in expansions
 	},
 	{
 		"name": "The Pyramids",
@@ -150,8 +156,9 @@
 		"greatPersonPoints": {"gold": 1},
 		"isWonder": true,
 		"uniques": ["Must be next to [Coast]", "[+1 Gold] from [Water] tiles in this city"],
-		"requiredTech": "Iron Working",
+		"requiredTech": "Bronze Working",
 		"quote": "'Why man, he doth bestride the narrow world like a colossus, and we petty men walk under his huge legs, and peep about to find ourselves dishonorable graves.' - William Shakespeare, Julius Caesar"
+		// requiredTech "Iron Working" in expansions; trade routes with other civs to this city generate +2 gold, from this city +1 gold in BNW
 	},
 	{
 		"name": "Krepost",
@@ -200,11 +207,12 @@
 		"isWonder": true,
 		"providesFreeBuilding":  "Lighthouse",
 		"uniques": ["Must be next to [Coast]", "All military naval units receive +1 movement and +1 sight"],
-		"requiredTech": "Optics",
+		"requiredTech": "Sailing",
 		"quote": "'They that go down to the sea in ships, that do business in great waters; these see the works of the Lord, and his wonders in the deep.' - The Bible, Psalms 107:23-24"
+		// requiredTech "Optics" in expansions
 	},
 	{
-		"name": "Stable", 
+		"name": "Stable",
 		"maintenance": 1,
 		"requiredNearbyImprovedResources": ["Horses","Sheep","Cattle"],
 		"resourceBonusStats": {"production": 1},
@@ -220,7 +228,7 @@
 		"isNationalWonder": true,
 		"requiredBuildingInAllCities": "Colosseum",
 		"uniques": ["Cost increases by [30] per owned city"],
-		"requiredTech": "Horseback Riding"
+		"requiredTech": "Construction"
 	},
 	{
 		"name": "Hanging Gardens",
@@ -230,6 +238,7 @@
 		"isWonder": true,
 		"requiredTech": "Mathematics",
 		"quote": "'I think that if ever a mortal heard the word of God it would be in a garden at the cool of the day.'  - F. Frankfort Moore"
+		// 6 food and provides garden in this city in expansions
 	},
 	{
 		"name": "Courthouse",
@@ -240,12 +249,14 @@
 		"requiredTech": "Mathematics"
 	},
 	{
-		"name": "Colosseum", 
+		"name": "Colosseum",
 		"maintenance": 1,
 		"happiness": 2,
 		"hurryCostModifier": 25,
 		"requiredTech": "Construction"
+		// Cannot provide more Happiness than there are Citizens in a city.
 	},
+	/*
 	{
 		"name": "Terracotta Army",
 		"culture": 6,
@@ -255,6 +266,7 @@
 		"quote": "'Regard your soldiers as your children, and they will follow you into the deepest valleys; look on them as your own beloved sons, and they will stand by you even unto death.'  - Sun Tzu"
 		// will be introduced in G&K expansion pack
 	},
+	*/
 	{
 		"name": "Temple",
 		"culture": 3,
@@ -263,6 +275,7 @@
 		"maintenance": 2,
 		"hurryCostModifier": 25,
 		"requiredTech": "Philosophy"
+		// 2 faith instead of 3 culture, requiredBuilding "Shrine", no specialistSlots in expansions
 	},
 	{
 		"name": "Burial Tomb",
@@ -275,6 +288,7 @@
 		"requiredBuilding": "Monument",
 		"hurryCostModifier": 25,
 		"requiredTech": "Philosophy"
+		// 2 faith instead of 2 culture, requiredBuilding "Shrine", no specialistSlots in expansions
 	},
 	{
 		"name": "Mud Pyramid Mosque",
@@ -284,8 +298,10 @@
 		"specialistSlots": {"culture": 1},
 		"hurryCostModifier": 25,
 		"culture": 4,
+		"specialistSlots": {"culture": 1},
 		"requiredBuilding": "Monument",
 		"requiredTech": "Philosophy"
+		// 2 faith, 2 culture, requiredBuilding "Shrine", no specialistSlots in expansions
 	},
 	{
 		"name": "The Oracle",
@@ -304,6 +320,7 @@
 		"isNationalWonder": true,
 		"requiredBuildingInAllCities": "Monument",
 		"requiredTech": "Philosophy"
+		// requiredTech "Drama and Poetry" in expansions; 1 great writing slot in BNW
 	},
 	{
 		"name": "Market",
@@ -312,6 +329,7 @@
 		"hurryCostModifier": 25,
 		"percentStatBonus": {"gold": 25},
 		"requiredTech": "Currency"
+		// 1 gold, trade routes with other civs to and from city with this generate extra 1 gold in BNW
 	},
 	{
 		"name": "National Treasury",
@@ -322,6 +340,7 @@
 		"requiredBuildingInAllCities": "Market",
 		"uniques": ["Cost increases by [30] per owned city"],
 		"requiredTech": "Currency"
+		// will be replaced by the East India Company in BNW
 	},
 	{
 		"name": "Bazaar",
@@ -334,6 +353,7 @@
 		"uniques": ["Provides 1 extra copy of each improved luxury resource near this City",
 			"[+2 Gold] from [Oil] tiles in this city", "[+2 Gold] from [Oasis] tiles in this city"],
 		"requiredTech": "Currency"
+		// trade routes with other civs to and from city with this generate extra 1 gold in BNW
 	},
 	{
 		"name": "Mint",
@@ -357,7 +377,6 @@
 	{
 		"name": "Aqueduct",
 		"maintenance": 1,
-		"hurryCostModifier": 0,
 		"uniques": ["[40]% of food is carried over after population increases"],
 		"requiredTech": "Engineering"
 	},
@@ -368,8 +387,9 @@
 		"isWonder": true,
 		"providesFreeBuilding":  "Walls",
 		"uniques": ["Enemy land units must spend 1 extra movement point when inside your territory (obsolete upon Dynamite)"],
-		"requiredTech": "Engineering",
+		"requiredTech": "Construction",
 		"quote": "'The art of war teaches us to rely not on the likelihood of the enemy's not attacking, but rather on the fact that we have made our position unassailable.'  - Sun Tzu"
+		// requiredTech "Engineering" in expansoins; 1 culture in BNW
 	},
 	{
 		"name": "Heroic Epic",
@@ -379,6 +399,7 @@
 		"requiredBuildingInAllCities": "Barracks",
 		"uniques": ["All newly-trained [non-air] units in this city receive the [Morale] promotion", "Cost increases by [30] per owned city"],
 		"requiredTech": "Iron Working"
+		// 1 great writing slot in BNW
 	},
 	
 	// Medieval Era
@@ -398,6 +419,7 @@
 		"resourceBonusStats": {"culture": 2},
 		"hurryCostModifier": 25,
 		"requiredTech": "Theology"
+		// 2 culture, 2 faith; resourceBonusStats {"culture": 1, "faith": 1} in expansions
 	},
 	{
 		"name": "Hagia Sophia",
@@ -407,6 +429,7 @@
 		"uniques": ["+[25]% great person generation in all cities"],
 		"requiredTech": "Theology",
 		"quote": "'For it soars to a height to match the sky, and as if surging up from among the other buildings it stands on high and looks down upon the remainder of the city, adorning it, because it is a part of it, but glorying in its own beauty'  - Procopius, De Aedificis"
+		// no culture, 3 faith, free prophet and temple in expansions
 	},
 	{
 		"name": "National College",
@@ -436,17 +459,19 @@
 		"culture": 1,
 		"isWonder": true,
 		"uniques": ["Gold from all trade routes +25%","Must have an owned [Mountain] within [2] tiles"],
-		"requiredTech": "Guilds",
+		"requiredTech": "Currency",
 		"quote": "'Few romances can ever surpass that of the granite citadel on top of the beetling precipices of Machu Picchu, the crown of Inca Land.'  - Hiram Bingham"
+		// no culture, 2 faith, requiredTech "Guilds" in expansions
 	},
 	{
-		"name": "Workshop", 
+		"name": "Workshop",
 		"maintenance": 2,
 		"production": 2,
 		"specialistSlots": {"production": 1},
 		"hurryCostModifier": 25,
 		"percentStatBonus": {"production": 10},
 		"requiredTech": "Metal Casting"
+		// allows production to be moved from this city along trade routes inside your civilization in BNW
 	},
 	{
 		"name": "Longhouse",
@@ -471,11 +496,12 @@
 	},
 	{
 		"name": "Harbor",
-		"maintenance": 2,
+		"maintenance": 3,
 		"hurryCostModifier": 25,
 		"uniques": ["[+1 Production] from [Water resource] tiles in this city",
 			"Connects trade routes over water","Must be next to [Coast]"],
 		"requiredTech": "Compass"
+		// 2 maintenance, +50% range and +1 gold for sea trade routes from this city to other civ in BNW
 	},
 	{
 		"name": "University",
@@ -486,6 +512,7 @@
 		"requiredBuilding": "Library",
 		"uniques": ["[+2 Science] from [Jungle] tiles in this city"],
 		"requiredTech": "Education"
+		// allows archeologists to be built is this city in BNW
 	},
 	{
 		"name": "Wat",
@@ -509,27 +536,27 @@
 		"requiredBuildingInAllCities": "University",
 		"uniques": ["Free Technology", "Cost increases by [30] per owned city"],
 		"requiredTech": "Education"
+		// 2 great writing slots in BNW
 	},
 	{
 		"name": "Castle",
-		"cityStrength": 7,
-		"cityHealth": 25,
+		"cityStrength": 4,
 		"hurryCostModifier": 25,
 		"requiredBuilding": "Walls",
 		"requiredTech": "Chivalry"
-		// 4 cityStrength in vanilla, no ExtraCityHitPoints in vanilla
+		// 7 cityStrength, 25 cityHealth in expansions
 	},
 	{
 		"name": "Mughal Fort",
 		"replaces": "Castle",
 		"uniqueTo": "India",
-		"cityStrength": 7,
-		"cityHealth": 25,
+		"cityStrength": 6,
 		"culture": 2,
 		"hurryCostModifier": 25,
 		"requiredBuilding": "Walls",
 		"uniques": ["[+1 Gold] once [Flight] is discovered"],
 		"requiredTech": "Chivalry"
+		// 7 cityStrength, 25 cityHealth in expansions; +2 tourism instead of gold once [Flight] is discovered in BNW
 	},
 	{
 		"name": "Angkor Wat",
@@ -537,9 +564,11 @@
 		"greatPersonPoints": {"production": 1},
 		"isWonder": true,
 		"uniques": ["Cost of acquiring new tiles reduced by 25%"],
-		"requiredTech": "Chivalry",
+		"requiredTech": "Theology",
 		"quote": "'The temple is like no other building in the world. It has towers and decoration and all the refinements which the human genius can conceive of.'  - Antonio da Magdalena"
+		//requiredTech "Education" in expansions
 	},
+	/*
 	{
 		"name": "Alhambra",
 		"culture": 1,
@@ -552,6 +581,7 @@
 		"quote": "'Justice is an unassailable fortress, built on the brow of a mountain which cannot be overthrown by the violence of torrents, nor demolished by the force of armies.'  - Joseph Addison"
 		// will be introduced in G&K expansion pack
 	},
+	*/
 	{
 		"name": "Ironworks",
 		"cost": 125,
@@ -568,8 +598,9 @@
 		"happiness": 10,
 		"greatPersonPoints": {"gold": 1},
 		"isWonder": true,
-		"requiredTech": "Physics",
+		"requiredTech": "Education",
 		"quote": "'Architecture has recorded the great ideas of the human race. Not only every religious symbol, but every human thought has its page in that vast book.'  - Victor Hugo"
+		// 4 faith, no culture, requiredTech "Physics" in expansions
 	},
 	{
 		"name": "Armory",
@@ -577,7 +608,8 @@
 		"hurryCostModifier": 25,
 		"maintenance": 1,
 		"requiredBuilding": "Barracks",
-		"requiredTech": "Steel"
+		"requiredTech": "Machinery"
+		// requiredTech "Steel" in expansions
 	},
 	
 	// Renaissance Era
@@ -599,6 +631,7 @@
 		"requiredBuilding": "Temple",
 		"maintenance": 2,
 		"requiredTech": "Acoustics"
+		// 1 maintenance, 1 culture, requiredBuilding "Amphitheater", great music work slot, no specialistSlots in BNW
 	},
 	{
 		"name": "Sistine Chapel",
@@ -608,6 +641,7 @@
 		"uniques": ["Culture in all cities increased by 25%"],
 		"requiredTech": "Acoustics",
 		"quote": "'I live and love in God's peculiar light.' - Michelangelo Buonarroti"
+		// 2 great art work slots, no greatPersonPoints in BNW
 	},
 	{
 		"name": "Bank",
@@ -621,7 +655,7 @@
 	{
 		"name": "Satrap's Court",
 		"replaces": "Bank",
-		"uniqueTo": "Persia",	
+		"uniqueTo": "Persia",
 		"gold": 2,
 		"specialistSlots": {"gold": 1},
 		"happiness": 2,
@@ -629,11 +663,13 @@
 		"percentStatBonus": {"gold": 25},
 		"requiredBuilding": "Market",
 		"requiredTech": "Banking"
+		// 3 gold, trade routes with other civs to and from city with this generate extra 1 gold in BNW
 	},
+	/*
 	{
 		"name": "Hanse",
 		"replaces": "Bank",
-		"uniqueTo": "Germany",		
+		"uniqueTo": "Germany",
 		"gold": 2,
 		"specialistSlots": {"gold": 1},
 		"hurryCostModifier": 15,
@@ -641,8 +677,9 @@
 		"uniques": ["+5% Production for every Trade Route with a City-State in the empire"],
 		"requiredBuilding": "Market",
 		"requiredTech": "Banking"
-		// will be introduced in BNW expansion pack
+		// Will be introduced in BNW expansion pack
 	},
+	*/
 	{
 		"name": "Forbidden Palace",
 		"culture": 1,
@@ -651,6 +688,7 @@
 		"uniques": ["Unhappiness from population decreased by [10]%"],
 		"requiredTech": "Banking",
 		"quote": "'Most of us can, as we choose, make of this world either a palace or a prison' - John Lubbock"
+		// -10% Unhappiness from Citizens in non-occupied cities
 	},
 	{
 		"name": "Theatre",
@@ -659,17 +697,21 @@
 		"maintenance": 2,
 		"requiredBuilding": "Colosseum",
 		"requiredTech": "Printing Press"
+		// Cannot provide more Happiness than there are Citizens in a city.
+		// removed in BNW
 	},
+	/*
 	{
 		"name": "Leaning Tower of Pisa",
 		"culture": 1,
 		"isWonder": true,
-		"greatPersonPoints": {"culture": 1},		
+		"greatPersonPoints": {"culture": 1},
 		"uniques": ["Free Great Person"],
 		"requiredTech": "Printing Press",
 		"quote": "'Don't clap too hard - it's a very old building.' - John Osbourne"
 		// will be introduced in G&K expansion pack
 	},
+	*/
 	{
 		"name": "Himeji Castle",
 		"culture": 3,
@@ -677,8 +719,10 @@
 		"greatPersonPoints": {"production": 2},
 		"providesFreeBuilding": "Castle",
 		"uniques": ["+15% combat strength for units fighting in friendly territory"],
-		"requiredTech": "Gunpowder",
+		"requiredTech": "Chivalry",
 		"quote": "'Bushido is realized in the presence of death. This means choosing death whenever there is a choice between life and death. There is no other reasoning.'  - Yamamoto Tsunetomo"
+		// requiredTech "Gunpowder" in expansions
+		// 1 culture in BNW
 	},
 	{
 		"name": "Museum",
@@ -688,6 +732,7 @@
 		"maintenance": 3,
 		"hurryCostModifier": 0,
 		"requiredTech": "Archaeology"
+		// 1 culture, 1 maintenance, 2 great art work slots, no specialistSlots in BNW
 	},
 	{
 		"name": "Hermitage",
@@ -697,21 +742,23 @@
 		"isNationalWonder": true,
 		"requiredBuildingInAllCities": "Opera House",
 		"uniques": ["Cost increases by [30] per owned city"],
-		"requiredTech": "Archaeology"
-	}, 
+		"requiredTech": "Acoustics"
+		// requiredTech "Architecture" in expansions; 2 culture, 3 great art work slots in BNW
+	},
 	{
 		"name": "The Louvre",
-		"culture": 1,
-		"happiness": 4,
+		"culture": 4,
 		"isWonder": true,
+		"greatPersonPoints": {"culture": 2},
 		"uniques": ["[2] free [Great Artist] units appear"],
 		"requiredTech": "Archaeology",
 		"quote": "'Every genuine work of art has as much reason for being as the earth and the sun'  - Ralph Waldo Emerson"
+		// 2 culture, 1 free artist, no greatPersonPoints, 4 great art work slots in BNW
 	},
 	{
 		"name": "Seaport",
 		"hurryCostModifier": 25,
-		"maintenance": 3,
+		"maintenance": 2,
 		"requiredBuilding": "Harbor",
 		"uniques": ["[+1 Production, +1 Gold] from [Water resource] tiles in this city",
 			"Must be next to [Coast]", "+[15]% production when building [naval units] in this city"],
@@ -724,8 +771,9 @@
 		"greatPersonPoints": {"culture": 2},
 		"isWonder": true,
 		"uniques": ["Empire enters golden age"],
-		"requiredTech": "Architecture",
+		"requiredTech": "Printing Press",
 		"quote": "'The Taj Mahal rises above the banks of the river like a solitary tear suspended on the cheek of time.'  - Rabindranath Tagore"
+		// requiredTech "Architecture" in expansions; no greatPersonPoints in BNW
 	},
 	{
 		"name": "Porcelain Tower",
@@ -733,8 +781,9 @@
 		"greatPersonPoints": {"science": 2},
 		"isWonder": true,
 		"uniques": ["Free [Great Scientist] appears","Science gained from research agreements +50%"],
-		"requiredTech": "Architecture",
+		"requiredTech": "Education",
 		"quote": "'Things always seem fairer when we look back at them, and it is out of that inaccessible tower of the past that Longing leans and beckons.'  - James Russell Lowell"
+		// requiredTech "Architecture" in expansions
 	}, 
 	{
 		"name": "Windmill",
@@ -765,24 +814,21 @@
 		"specialistSlots": {"production": 2},
 		"requiredBuilding": "Workshop",
 		"maintenance": 3,
-		"hurryCostModifier": 0,
 		"requiredResource": "Coal",
-		"requiredTech": "Industrialization"
+		"requiredTech": "Steam Power"
+		// requiredTech Industrialization" in expansions
 	},
-	/*
 	{
 		"name": "Arsenal",
 		"cityStrength": 6,
 		"hurryCostModifier": 25,
 		"requiredBuilding": "Castle",
 		"requiredTech": "Rifling"
-		//+9 City Defense Strength, +25 City Hit Points, requiredTech "Metallurgy" in expansions
+		// +9 City Defense Strength, +25 City Hit Points, requiredTech "Metallurgy" in expansions
 	},
-	*/
 	{
 		"name": "Military Academy",
 		"xpForNewUnits": 15,
-		"hurryCostModifier": 0,
 		"maintenance": 1,
 		"requiredBuilding": "Armory",
 		"requiredTech": "Military Science"
@@ -796,23 +842,24 @@
 		"uniques": ["Free [Great General] appears"],
 		"requiredTech": "Military Science",
 		"quote": "'Pale Death beats equally at the poor man's gate and at the palaces of kings.'  - Horace"
+		// 1 culture in BNW
 	},
 	{
 		"name": "Hospital",
 		"food": 5,
 		"requiredBuilding": "Aqueduct",
 		"maintenance": 2,
-		"hurryCostModifier": 0,
 		"requiredTech": "Biology"
 	},
 	{
 		"name": "Stock Exchange",
 		"gold": 3,
-		"percentStatBonus": {"gold": 25},
+		"percentStatBonus": {"gold": 33},
 		"specialistSlots": {"gold": 2},
 		"hurryCostModifier": 15,
 		"requiredBuilding": "Bank",
 		"requiredTech": "Electricity"
+		// +25% gold in BNW
 	},
 	{
 		"name": "Big Ben",
@@ -821,23 +868,23 @@
 		"greatPersonPoints": {"gold": 2},
 		"isWonder": true,
 		"uniques": ["Cost of purchasing items in cities reduced by [15]%"],
-		"requiredTech": "Industrialization",
+		"requiredTech": "Economics",
 		"quote": "'To achieve great things, two things are needed: a plan, and not quite enough time.'  - Leonard Bernstein"
+		// requiredTech "Industrialization" in expansions
 	},
-	/* This works and even has icon but AI cannot manage its Aluminum at this moment
 	{
 		"name": "Hydro Plant",
-		"cost": 360,
+		"cost": 500,
 		"requiredResource": "Aluminum",
 		"hurryCostModifier": 0,
 		"maintenance": 3,
 		"uniques": ["Must be on [River]","[+1 Production] from [River] tiles in this city"],
-		"requiredTech": "Electricity"
+		"requiredTech": "Plastics"
+		// costs 360, requiredTech "Electricity" in expansions
 	},
-	*/
 	
 	// Modern Era
-	
+
 	{
 		"name": "Broadcast Tower",
 		"culture": 3,
@@ -845,6 +892,7 @@
 		"requiredBuilding": "Museum",
 		"maintenance": 3,
 		"requiredTech": "Radio"
+		// 1 culture, 1 great music work slot in BNW
 	},
 	{
 		"name": "Eiffel Tower",
@@ -855,6 +903,7 @@
 		"uniques": ["Provides 1 happiness per 2 additional social policies adopted"],
 		"requiredTech": "Radio",
 		"quote": "'We live only to discover beauty, all else is a form of waiting'  - Kahlil Gibran"
+		// +12 tourism BNW
 	},
 	{
 		"name": "Statue of Liberty",
@@ -864,6 +913,7 @@
 		"uniques": ["[+1 Production] from every specialist"],
 		"requiredTech": "Replaceable Parts",
 		"quote": "'Give me your tired, your poor, your huddled masses yearning to breathe free, the wretched refuse of your teeming shore. Send these, the homeless, tempest-tossed to me, I lift my lamp beside the golden door!'  - Emma Lazarus"
+		// no greatPersonPoints, free policy, requires freedom BNW
 	},
 	{
 		"name": "Research Lab",
@@ -879,36 +929,42 @@
 		"happiness": 4,
 		"requiredBuilding": "Theatre",
 		"maintenance": 2,
-		"requiredTech": "Refrigeration"
+		"requiredTech": "Mass Media"
+		// requiredTech "Refrigeration" in expansions; 2 happiness, must have a zoo in BNW
+		// Cannot provide more Happiness than there are Citizens in a city.
 	},
-	/*
 	{
 		"name": "Military Base",
 		"cityStrength": 12,
 		"hurryCostModifier": 25,
 		"requiredBuilding": "Arsenal",
 		"requiredTech": "Telegraph"
-		//+25 City Hit Points, requiredTech "Replaceable parts" in expansions
+		// +25 City Hit Points, requiredTech "Replaceable parts" in expansions
 	},
-	*/
 	{
 		"name": "Cristo Redentor",
-		"culture": 5,
+		"culture": 4,
 		"isWonder": true,
 		"greatPersonPoints": {"culture": 2},		
 		"uniques": ["Culture cost of adopting new Policies reduced by 10%"],
-		"requiredTech": "Flight",
+		"requiredTech": "Telegraph",
 		"quote": "'Come to me, all who labor and are heavy burdened, and I will give you rest.'  - New Testament, Matthew 11:28"
+		// requiredTech "Plastics", 5 culture in expansions
 	},
 	{
 		"name": "Kremlin",
 		"culture": 3,
 		"cityStrength": 12,
 		"isWonder": true,
+		"greatPersonPoints": {"science": 1},
 		"uniques": ["Defensive buildings in all cities are 25% more effective"],
-		"requiredTech": "Railroad",
+		"requiredTech": "Acoustics",
 		"quote": "'The Law is a fortress on a hill that armies cannot take or floods wash away.'   –- The Prophet Muhammed"
+		// requiredTech "Metallurgy" in G&K
+		// requiredTech "Railroad", +50% production of Armor and free policy instead of defence and great scientist point in BNW
+		// "Requires [Order]", 1 culture in BNW
 	},
+	/*
 	{
 		"name": "Neuschwanstein",
 		"happiness": 2,
@@ -922,6 +978,7 @@
 		"quote": "'...the location is one of the most beautiful to be found, holy and unapproachable, a worthy temple for the divine friend who has brought salvation and true blessing to the world.'  - King Ludwig II of Bavaria"
 		// will be introduced in G&K expansion pack
 	},
+	*/
 	
 	// Information Era
 	
@@ -940,6 +997,7 @@
 	},
 	{
 		"name": "Nuclear Plant",
+		"cost": 360,
 		"production": 5,		
 		"percentStatBonus": {"production": 15},
 		"requiredBuilding": "Factory",
@@ -947,25 +1005,31 @@
 		"cannotBeBuiltWith": "Solar Plant",
 		"requiredResource": "Uranium",
 		"requiredTech": "Nuclear Fission"
+		// costs 500 in expansions
 	},
 	{
 		"name": "Solar Plant",
-		"production": 5,		
+		"cost": 360,
+		"production": 5,
 		"percentStatBonus": {"production": 15},
 		"requiredBuilding": "Factory",
 		"maintenance": 3,
 		"cannotBeBuiltWith": "Nuclear Plant",
 		"requiredTech": "Ecology",
 		"uniques": ["Must be next to [Desert]"]
+		// costs 500 in expansions
 	},
 	{
 		"name": "Sydney Opera House",
 		"isWonder": true,
+		"culture": 4,
 		"greatPersonPoints": {"culture": 2},
 		"percentStatBonus": {"culture": 50},
 		"uniques": ["Free Social Policy","Must be next to [Coast]"],
-		"requiredTech": "Ecology",
+		"requiredTech": "Mass Media",
 		"quote": "'Those who lose dreaming are lost.'  - Australian Aboriginal saying"
+		// requiredTech "Ecology", no "+4 culture" in expansions
+		// 2 great music slots, no greatPersonPoints in BNW
 	},
 	/*
 	{
@@ -992,10 +1056,11 @@
 		"name": "Pentagon",
 		"isWonder": true,
 		"culture": 3,
-		"greatPersonPoints": {"production": 2},
+		"greatPersonPoints": {"gold": 2},
 		"uniques": ["Gold cost of upgrading military units reduced by 33%"],
-		"requiredTech": "Combined Arms",
+		"requiredTech": "Radar",
 		"quote": "'In preparing for battle I have always found that plans are useless, but planning is indispensable.'  - Dwight D. Eisenhower"
+		// requiredTech "Combined Arms" in expansions; 1 culture in BNW
 	},
 	{
 		"name": "Spaceship Factory",
@@ -1011,6 +1076,7 @@
 		"requiredResource": "Aluminum",
 		"requiredTech": "Robotics",
 		"uniques": ["Spaceship part", "Cannot be purchased"]
+		// should be a unit
 	},
 	{
 		"name": "Apollo Program",
@@ -1022,6 +1088,7 @@
 	
 	// Future Era
 	
+	/*
 	{
 		"name": "Hubble Space Telescope",
 		"cost": 1250,
@@ -1034,22 +1101,26 @@
 		"quote": "'The wonder is, not that the field of stars is so vast, but that man has measured it.'  - Anatole France"
 		// will be introduced in G&K expansion pack
 	},
+	*/
 	{
 		"name": "SS Cockpit",
 		"requiredResource": "Aluminum",
 		"requiredTech": "Satellites",
 		"uniques": ["Spaceship part", "Cannot be purchased"]
+		// should be a unit
 	},
 	{
 		"name": "SS Engine",
 		"requiredResource": "Aluminum",
 		"requiredTech": "Particle Physics",
 		"uniques": ["Spaceship part", "Cannot be purchased"]
+		// should be a unit
 	},
 	{
 		"name": "SS Stasis Chamber",
 		"requiredResource": "Aluminum",
 		"requiredTech": "Nanotechnology",
 		"uniques": ["Spaceship part", "Cannot be purchased"]
+		// should be a unit
 	}
 ]

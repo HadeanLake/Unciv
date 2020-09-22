@@ -29,7 +29,7 @@
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Forest","Jungle","Flood plains"],
 		"gold": 1,
 		"turnsToBuild": 7,
-		"techRequired": "Guilds",
+		"techRequired": "Trapping",
 		"uniques": ["[+1 Gold] once [Economics] is discovered"]
 	},
 	
